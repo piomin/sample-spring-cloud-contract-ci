@@ -1,0 +1,6 @@
+spring:  
+  application:
+    name: person-service
+
+server:  
+  port: ${PORT:8090}

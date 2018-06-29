@@ -2,11 +2,14 @@ package pl.piomin.services.person.model;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 public class Person {
 
 	private Integer id;
 	private String firstName;
 	private String lastName;
+	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date birthDate;
 	private Gender gender;
 	private Contact contact;

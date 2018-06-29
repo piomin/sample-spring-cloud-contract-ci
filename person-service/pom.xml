@@ -44,4 +44,21 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-contract-maven-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<baseClassForTests>pl.piomin.services.person.BasePersonContractTest</baseClassForTests>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>
