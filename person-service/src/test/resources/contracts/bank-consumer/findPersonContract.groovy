@@ -11,6 +11,7 @@ Contract.make {
 			id: 1,
 			firstName: 'Piotr',
 			lastName: 'Minkowski',
+			gender: $(regex('(MALE|FEMALE)')),
 			accountNo: $(regex(positiveInt())),
 			birthDate: $(regex(isoDate()))
 		])

@@ -14,7 +14,9 @@ Contract.make {
 			address: ([ 
 				city: $(regex(alphaNumeric())),
 				country: $(regex(alphaNumeric())),
-				postalCode: $(regex('[0-9]{2}-[0-9]{3}')), 
+				postalCode: $(regex('[0-9]{2}-[0-9]{3}')),
+				houseNo: $(regex(positiveInt())),
+				street: $(regex(nonEmpty()))
 			])
 		])
 		headers { 

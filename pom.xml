@@ -6,5 +6,8 @@
   <packaging>pom</packaging>
   <modules>
   	<module>person-service</module>
+  	<module>bank-service</module>
+  	<module>letter-service</module>
+  	<module>contact-service</module>
   </modules>
 </project>

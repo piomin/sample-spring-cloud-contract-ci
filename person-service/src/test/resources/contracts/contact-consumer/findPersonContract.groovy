@@ -11,6 +11,7 @@ Contract.make {
 			id: 1,
 			firstName: 'Piotr',
 			lastName: 'Minkowski',
+			gender: $(regex('(MALE|FEMALE)')),
 			contact: ([ 
 				email: $(regex(email())),
 				phoneNo: $(regex('[0-9]{9}$')) 

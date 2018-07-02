@@ -1,0 +1,7 @@
+ribbon:
+  eureka:
+   enabled: false
+   
+person-service:
+  ribbon:
+    listOfServers: localhost:8090
