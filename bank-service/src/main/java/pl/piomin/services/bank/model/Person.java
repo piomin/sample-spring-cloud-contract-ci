@@ -12,7 +12,7 @@ public class Person {
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	private Date birthDate;
 	private Gender gender;
-	private String accountNo;
+	private String accountNumber;
 
 	public Integer getId() {
 		return id;
@@ -55,11 +55,11 @@ public class Person {
 	}
 
 	public String getAccountNo() {
-		return accountNo;
+		return accountNumber;
 	}
 
 	public void setAccountNo(String accountNo) {
-		this.accountNo = accountNo;
+		this.accountNumber = accountNo;
 	}
 
 }
