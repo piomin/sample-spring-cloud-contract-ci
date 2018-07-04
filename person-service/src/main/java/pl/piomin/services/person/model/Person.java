@@ -14,7 +14,7 @@ public class Person {
 	private Gender gender;
 	private Contact contact;
 	private Address address;
-	private String accountNo;
+	private String accountNumber;
 
 	public Integer getId() {
 		return id;
@@ -72,12 +72,12 @@ public class Person {
 		this.address = address;
 	}
 
-	public String getAccountNo() {
-		return accountNo;
+	public String getAccountNumber() {
+		return accountNumber;
 	}
 
-	public void setAccountNo(String accountNo) {
-		this.accountNo = accountNo;
+	public void setAccountNumber(String accountNumber) {
+		this.accountNumber = accountNumber;
 	}
 
 }

@@ -12,7 +12,7 @@ Contract.make {
 			firstName: 'Piotr',
 			lastName: 'Minkowski',
 			gender: $(regex('(MALE|FEMALE)')),
-			accountNo: $(regex(positiveInt())),
+			accountNumber: $(regex(positiveInt())),
 			birthDate: $(regex(isoDate()))
 		])
 		headers { 

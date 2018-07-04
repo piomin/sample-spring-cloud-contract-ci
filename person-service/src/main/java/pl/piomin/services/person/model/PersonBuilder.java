@@ -88,7 +88,7 @@ public class PersonBuilder {
 		p.setId(id);
 		p.setFirstName(firstName);
 		p.setLastName(lastName);
-		p.setAccountNo(accountNo);
+		p.setAccountNumber(accountNo);
 		p.setGender(gender);
 		p.setBirthDate(birthDate);
 		Contact c = new Contact();
