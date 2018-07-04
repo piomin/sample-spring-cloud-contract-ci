@@ -29,6 +29,14 @@ public class PersonConsumerContractTest {
 		Person p = personClient.findPersonById(1);
 		Assert.assertNotNull(p);
 		Assert.assertEquals(1, p.getId().intValue());
+		Assert.assertNotNull(p.getFirstName());
+		Assert.assertNotNull(p.getLastName());
+		Assert.assertNotNull(p.getAddress());
+		Assert.assertNotNull(p.getAddress().getCity());
+		Assert.assertNotNull(p.getAddress().getCountry());
+		Assert.assertNotNull(p.getAddress().getPostalCode());
+		Assert.assertNotNull(p.getAddress().getStreet());
+		Assert.assertNotEquals(0, p.getAddress().getHouseNo());
 	}
 	
 }
