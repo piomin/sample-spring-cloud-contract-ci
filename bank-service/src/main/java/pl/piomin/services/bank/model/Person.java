@@ -54,11 +54,11 @@ public class Person {
 		this.gender = gender;
 	}
 
-	public String getAccountNo() {
+	public String getAccountNumber() {
 		return accountNumber;
 	}
 
-	public void setAccountNo(String accountNo) {
+	public void setAccountNumber(String accountNo) {
 		this.accountNumber = accountNo;
 	}
 

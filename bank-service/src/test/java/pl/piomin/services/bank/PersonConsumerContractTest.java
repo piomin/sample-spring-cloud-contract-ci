@@ -30,7 +30,7 @@ public class PersonConsumerContractTest {
 		Assert.assertEquals(1, p.getId().intValue());
 		Assert.assertNotNull(p.getFirstName());
 		Assert.assertNotNull(p.getLastName());
-		Assert.assertNotNull(p.getAccountNo());
+		Assert.assertNotNull(p.getAccountNumber());
 		Assert.assertNotNull(p.getBirthDate());
 		Assert.assertNotNull(p.getGender());
 	}
