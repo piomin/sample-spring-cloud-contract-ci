@@ -16,7 +16,7 @@ import pl.piomin.services.bank.model.Person;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.NONE)
-@AutoConfigureStubRunner(ids = {"pl.piomin.services:person-service:+:stubs:8090"}, consumerName = "bank-consumer",  stubsPerConsumer = true, stubsMode = StubsMode.LOCAL)
+@AutoConfigureStubRunner(ids = {"pl.piomin.services:person-service:+:stubs:8090"}, consumerName = "bank-consumer",  stubsPerConsumer = true, stubsMode = StubsMode.REMOTE, repositoryRoot = "http://192.168.99.100:8081/artifactory/libs-snapshot-local")
 @DirtiesContext
 public class PersonConsumerContractTest {
 
