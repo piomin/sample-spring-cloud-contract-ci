@@ -11,11 +11,12 @@ import org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import pl.piomin.services.letter.LetterApplication;
 import pl.piomin.services.letter.client.PersonClient;
 import pl.piomin.services.letter.model.Person;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = WebEnvironment.NONE)
+@SpringBootTest(webEnvironment = WebEnvironment.NONE, classes = {LetterApplication.class})
 @AutoConfigureStubRunner(ids = {"pl.piomin.services:person-service:+:stubs:8090"}, consumerName = "letter-consumer",  stubsPerConsumer = true, stubsMode = StubsMode.REMOTE, repositoryRoot = "http://192.168.99.100:8081/artifactory/libs-snapshot-local")
 @DirtiesContext
 public class PersonConsumerContractTest {
